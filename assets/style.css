@@ -4,16 +4,17 @@
   box-sizing: border-box;
 }
 
-#title{
-   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-   font-weight: lighter;
-   text-align: center;
-   color: white;
-   margin: 0;
-   font-size: 2rem;
+#title {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-weight: lighter;
+  text-align: center;
+  color: white;
+  margin: 0;
+  font-size: 2rem;
 }
 
-body, html {
+body,
+html {
   margin: 0;
   padding: 0;
   height: 100%;
@@ -29,7 +30,7 @@ body, html {
 .left-side {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   width: 54%;
-  background-color: #D7D7D7;
+  background-color: #d7d7d7;
   height: 100%;
   clip-path: polygon(0 0, 100% 0, 75% 100%, 0% 100%);
   padding: 50px;
@@ -39,34 +40,31 @@ body, html {
   justify-content: center;
   align-items: center;
   text-align: center;
-
 }
 
 .icons {
-  margin-top: 20px; /* Adds space between the text and icons */
+  margin-top: 20px;
   display: flex;
-  gap: 15px; /* Space between icons */
+  gap: 15px;
   justify-content: center;
   align-items: center;
 }
 
 .icons img {
-  width: 30px;       /* Size of icons */
+  width: 30px;
   height: 30px;
-  border-radius: 50%; /* Optional: Make them circular */
-  object-fit: cover;
+  border-radius: 50%;
   cursor: pointer;
   transition: transform 0.2s ease;
 }
 
 .icons img:hover {
-  transform: scale(1.1); /* Slight zoom on hover */
+  transform: scale(1.1);
 }
-
 
 .right-side {
   width: 62%;
-  height: 80% ;
+  height: 80%;
   background-color: black;
   height: 100%;
   clip-path: polygon(25% 0, 100% 0, 100% 100%, 0% 100%);
@@ -78,55 +76,218 @@ body, html {
   flex-direction: column;
   align-items: center;
   justify-content: start;
-  padding-top: 30px;
-  
+  margin-bottom: 100px;
 }
 
 .right-side img {
+  display: flex;
   width: 100%;
   height: 100%;
   object-fit: contain;
   border-radius: 200px;
+  margin-left: 100px;
 }
 
-.text1, .text2, .text3{
+.text1,
+.text2,
+.text3 {
   text-align: center;
 }
 
-.nav-bar{
+.nav-bar {
   border-color: white;
   text-decoration-color: bisque;
   display: flex;
   gap: 20px;
   padding: 10px 20px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin-left: 25%;
 }
 
-.nav-bar button{
-  font-family:Verdana, Geneva, Tahoma, sans-serif;
+.nav-bar button,
+.btn.btn-dark {
   width: 100px;
-  background-color: black;
-  color: white;
+  height: 40px;
+  /* background-color: black; */
+  /* color: white; */
   border: none;
-  padding: 8px 16px;
+  padding: 8px 0;
   cursor: pointer;
   border-radius: 5px;
-  font-weight: bold;
- transition: background 0.3s ease;
+  font-weight: regular;
+  text-align: center;
+  text-decoration: none;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  transition: background 0.3s ease;
+  box-sizing: border-box;
 }
 
-.nav-bar button:hover{
+/* .nav-bar .nav-button:hover {
   background-color: rgb(173, 164, 164);
-}
+} */
 
-.nav-bar button::pressed{
+.nav-bar button::pressed {
   background-color: #333;
 }
 
-.footer{
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+.footer {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   background-color: gray;
   height: 10%;
   color: white;
   height: 80px;
+}
+
+
+/*SA ABOUT PAGE ITO!*/
+.about-me-Page {
+  background-color: #d6d6d6;
+  display: flex;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.about-box {
+  border: 2px solid #ffffff; /* black border */
+  padding: 20px; /* space inside the box */
+  margin: 50px auto; /* center horizontally and add vertical space */
+  width: 20%; /* width of the box */
+  text-align:center; /* center text inside */
+  background-color: #f0f0f0; /* optional background color */
+  border-radius: 10px; /* optional rounded corners */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* optional shadow */
+ 
+}
+
+.about-section {
+  display: flex;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.abt-title {
+  font-size: 2rem;
+  color: white;
+}
+
+.about-me body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+
+.about-left-side {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: white;
+  width: 54%;
+  background-color: black;
+  height: 100%;
+  clip-path: polygon(0 0, 100% 0, 75% 100%, 0% 100%);
+  padding: 50px;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* <--- align content to the top */
+  align-items: flex-start;     /* <--- align items to the left */
+  text-align: left;
+  position: relative;
+}
+
+
+.about-right-side {
+  width: 62%;
+  height: 80%;
+  background-color: #d7d7d7;
+  height: 100%;
+  clip-path: polygon(25% 0, 100% 0, 100% 100%, 0% 100%);
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  margin-bottom: 100px;
+}
+
+.carousel-item img {
+  height: 400px; /* You can change this value as needed */
+  object-fit: cover;
+  width: 100%;
+}
+
+.education-side {
+  width: 50%;
+  height: 80%;
+  background-color: black;
+  height: 100%;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 20% 100%);
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  margin-bottom: 100px;
+  margin-right: 20px;
+}
+
+/* Shared Button Styles */
+.education-nav-bar button,
+.btn.btn-dark {
+  width: 100px;
+  height: 40px;
+  border: none;
+  padding: 8px 0;
+  cursor: pointer;
+  border-radius: 5px;
+  font-weight: normal;
+  text-align: center;
+  text-decoration: none;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  transition: background 0.3s ease;
+  box-sizing: border-box;
+
+
+}
+
+.education-nav-bar {
+  border-color: white;
+  text-decoration-color: bisque;
+  display: flex;
+  gap: 20px;
+  padding: 10px 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+   margin-left: 150px;
+}
+
+/* Individual positioning (optional tweaks) */
+.nav-bar {
+  margin-left: 25%;
+}
+
+.education-nav-bar {
+  margin-right: 25%;
+}
+
+/* Hover and Active States */
+.nav-bar button:hover,
+.education-nav-bar button:hover {
+  background-color: rgb(173, 164, 164);
+}
+
+.nav-bar button:active,
+.education-nav-bar button:active {
+  background-color: #333;
 }
