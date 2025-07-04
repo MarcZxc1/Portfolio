@@ -1,0 +1,111 @@
+@import "tailwindcss";
+
+@layer utilities {
+  textarea::-webkit-scrollbar {
+    width: 6px;
+  }
+  textarea::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  textarea::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 3px;
+  }
+  textarea::-webkit-scrollbar-thumb:hover {
+    background-color: #555;
+  }
+}
+
+#root {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.intro {
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  margin-left: 20px;
+  animation:
+    typing 2.5s steps(24, end),
+    blink-caret 0.75s step-end infinite,
+    fadeIn 1s ease-in;
+}
+
+/* Typing keyframes */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 18ch;
+  }
+}
+
+/* Blinking cursor */
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: orange;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.box1,
+.box2 {
+  animation: float 5s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-25px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.gear {
+  animation: spin 3s linear infinite;
+}
+
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.button-row {
+  display: flex;
+  gap: 0.5rem; /* or even 0.25rem for a tighter look */
+}
+
+.icons {
+  transition:
+    transform 0.3s ease-in-out,
+    filter 0.3s ease-in-out;
+}
+
+.icons:hover {
+  transform: scale(1.2); /* scale up by 20% */
+  filter: brightness(1.2); /* slight brightness effect */
+}
