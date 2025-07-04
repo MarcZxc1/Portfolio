@@ -1,12 +1,48 @@
-# React + Vite
+# MyPortfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Introduction / Overview
+MyPortfolio is a modern, interactive personal portfolio website built to showcase my skills, education, goals, and motivation as a software developer. The site features a visually engaging About Me page, a tech stack section, and a contact form, all designed for clarity and impact.
 
-Currently, two official plugins are available:
+## Features
+- Animated and interactive About Me page
+- Timeline/roadmap for education
+- Professional summary, goals, and motivation panels
+- Responsive design for all devices
+- Modern UI with Tailwind CSS and Framer Motion
+- Contact form for easy communication
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Technologies Used
+- React.js
+- Tailwind CSS
+- Framer Motion
+- React Icons
+- Vite
 
-## Expanding the ESLint configuration
+## Screenshots or Demo
+![About Me Screenshot](./assets/mengaba.png)
+<!-- Add more screenshots or a link to a live demo if available -->
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Installation
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/yourusername/myportfolio.git
+   cd myportfolio
+   ```
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+3. Start the development server:
+   ```bash
+   npm run dev
+   ```
+4. Open your browser and go to `http://localhost:5173` (or the port shown in your terminal).
+
+## Contact
+- **Name:** Marc Gerald A. Dagode
+- **Email:** dagodemarcgeraldarante@gmail.com
+- **LinkedIn:** [Your LinkedIn](https://www.linkedin.com/in/your-linkedin-profile)
+
+## Acknowledgments
+- Inspired by modern portfolio designs and the open-source community.
+- Thanks to all contributors and supporters!
